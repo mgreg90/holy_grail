@@ -1,0 +1,49 @@
+body, div {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  order: -1;
+  background: green;
+}
+
+section {
+  background: gray;
+}
+
+@media (min-width: 568px) {
+  div {
+    flex-direction: row;
+    flex: 1;
+  }
+  section {
+    flex: 1;
+    height: 100%;
+    padding: 0 0 750px 0;
+    margin: 0 5px 0 5px;
+}
+  nav, aside {
+    flex: 0 0 12em;
+    height: 100%;
+    padding: 0 0 750px 0;
+  }
+}
+
+aside {
+  background: red;
+}
+
+header {
+  padding: 38px 0 38px 0;
+  margin-bottom: 5px;
+}
+
+footer {
+  padding: 38px 0 38px 0;
+  margin-top: 5px;
+}
+
+header, footer {
+  background: blue;
+}
